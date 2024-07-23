@@ -1,11 +1,12 @@
 import Link from 'next/link';
+import Header from '../_components/Header'
+import Description from '@/_components/Description'
 
 export default function Home() {
   return (
     <main className="flex flex-col justify-center text-center">
-      <div className="text-5xl text-slate-200 font-bold underline p-7">
-        <h1>Weatherman</h1>
-      </div>
+      <Header />
+      <Description />
       <div>
         <Link href="/search">
           <button
